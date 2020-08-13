@@ -1,0 +1,4 @@
+venv
+garden
+*__pycache__*
+.vscode

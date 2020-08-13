@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>INVOICE</title>
+  </head>
+  <body>
+    <header class="clearfix">
+      <div id="company" style="float: right; top: 0; z-index: 1; text-align: right;">
+        <h2 class="name">Garden Fresh To Home</h2>
+        <div>455 Foggy Heights, AZ 85004, US</div>
+        <div>(602) 519-0450</div>
+        <div><a href="mailto:gardenfreshtohome@gmail.com">gardenfreshtohome@gmail.com</a></div>
+      </div>
+      </div>
+    </header>
+    <main>
+      <div id="details" class="clearfix">
+        <div id="client" style="float: left;position: absolute; z-index: 200; top: 0;text-align: left;" >
+          <div class="to" style="margin-top: 10px;">INVOICE TO:</div>
+          <h2 class="name">{{ user }}</h2>
+          <div class="address">Phone: {{ phone }}, </div>
+          <div class="address">{{ address.name }}, </div>
+          <div class="address">{{ address.add1 }},{{ address.add2 }}, </div>
+          <div class="address">{{ address.add3 }},{{ address.add4 }}, </div>
+          <div class="address">{{ address.city }}, {{ address.state }} </div>
+          <div class="address">{{ address.pincode }}, </div>
+          <div class="address">Distance: {{ address.distance }}, </div>
+          <div class="email"><a href="mailto:john@example.com">john@example.com</a></div>
+        </div>
+        <div id="invoice" style="float: left;text-align: left;">
+          <h1>ORDER  {{ order_id }}</h1>
+          <div class="date">Order updated at: {{ updated_at }}</div>
+        </div>
+      </div>
+      <table cellspacing="0" cellpadding="0">
+        <thead>
+          <tr>
+            <th class="no">#</th>
+            <th class="desc">ITEM</th>
+            <th class="unit">UNIT PRICE</th>
+            <th class="unit">DISCOUNTED PRICE</th>
+            <th class="qty">QUANTITY</th>
+            <th class="total">TOTAL</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for items in cart_items %}
+          <tr>
+            <td class="no" style="text-align: center;">{{ items.index }}</td>
+            <td class="desc" style="text-align: center;"><h3>{{ items.name }}</h3></td>
+            <td class="unit" style="text-align: center;">Rs. {{ items.unit_price }}</td>
+            <td class="unit" style="text-align: center;">Rs. {{ items.unit_discount }}</td>
+            <td class="qty" style="text-align: center;">{{ items.qty }}</td>
+            <td class="total" style="text-align: center;">Rs. {{ items.total }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+        <tfoot style="float: right;">
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="2">SUBTOTAL</td>
+            <td>Rs. {{ sub_total }}</td>
+          </tr>
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="2">TAX</td>
+            <td>Rs. {{ tax }}</td>
+          </tr>
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="2">Delivery fee</td>
+            <td>Rs. {{ delivery_fee }}</td>
+          </tr>
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="2">GRAND TOTAL</td>
+            <td>Rs. {{ grand_total }}</td>
+          </tr>
+        </tfoot>
+      </table>
+      <div id="thanks" >Payment Status:</div>
+      {% if payment_status == "SUCCEEDED" %}
+      <div class="success" style="color: greenyellow;">SUCCEEDED</div>
+      {% endif %}
+      {% if payment_status == "FAILED" %}
+      <div class="failed" style="color: red;">FAILED</div>
+      {% endif %}
+      {% if payment_status == "ORDERED" %}
+      <div class="ordered" style="color:grey;">ORDERED</div>
+      {% endif %}
+
+    </main>
+    <footer>
+      Invoice was created on a computer and is valid without the signature and seal.
+    </footer>
+  </body>
+</html>

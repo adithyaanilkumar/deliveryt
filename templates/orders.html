@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Order List</title>
+  </head>
+  <body>
+    <table width='100%' style = "border: 1px solid black;word-break:break-all; border-collapse: collapse">
+        <caption>Orders </caption>
+        <thead>
+         <tr>
+         <th width=1%>No</th>
+         <th colspan="2">Order ID</th>
+         <th colspan="2">User ID</th>
+         <th colspan="2">Address</th>
+         <th colspan="1"> Pincode</td>
+         <th colspan="3">Order</th>
+         <th colspan="1">Price</th>
+         <th colspan="1">status</th>
+         </tr>
+        </thead>
+        <tbody>
+            {% for data in datas%}
+            <tr>
+                <td  id="sl" >{{data.count}}</td>
+                <td colspan="2" id="order_id" style="word-break:break-all;" >{{ data.order_id_p1 }} <br> {{ data.order_id_p2}}<br>  updated at: <br> {{ data.updated_at}} </td>
+                <td colspan="2" id="name" style="word-break:break-all;" >{{ data.user_id_p1 }}<br> {{ data.user_id_p2 }}</td>
+                <td colspan="2" id="address"  style="word-break:break-all;" >{{ data.address.name }},<br>{{ data.address.add1 }},<br>{{ data.address.add2 }}<br>{{ data.address.add3 }}<br>{{ data.address.add4 }}<br>{{ data.address.city }}, {{ data.address.state }},<br> Distance: {{ data.address.distance }},<br>Phone: {{data.phone }},</td>
+                <td colspan="1" id="pincode"  style="word-break:break-all;">{{ data.address.pincode }}</td>
+                <td colspan="3" id="Orders">    
+                    
+                    <table  width='100%'  style = " border: 1px solid black; border-collapse: collapse">
+                        <thead>
+                            <tr >
+                                <th>Item</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th>Disc price</th>
+                                <th>Total price</th>
+                            </tr>
+                        </thead>
+                        <tbody> 
+                            {% for items in data.cart_items %}
+                                <tr>                               
+                                    <td style="word-break:break-all;">{{ items.name }}</td>
+                                    <td>{{ items.qty }}</td>
+                                    <td>Rs. {{ items.unit_price }}</td>
+                                    <td>Rs. {{ items.unit_discount }}</td>
+                                    <td>Rs. {{ items.total }}</td>
+                                </tr>    
+                            {% endfor %}
+                        </tbody>
+
+                        
+                    </table>
+                    </div>
+                </td>
+                <td colspan="1" id="price" >Rs. {{ data.sub_total }}</td>
+                <td colspan="1" id="status" style="word-break:break-all;" >{{data.payment_status}}</td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+       </table>
+
