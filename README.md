@@ -1,3 +1,2 @@
-# garden-server
-The Backend web application for deliveryt E commerce platform
-
+# deliveryt server
+The Backend web application for deliveryt.
