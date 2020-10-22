@@ -1,4 +1,4 @@
-# LoRi
+# Deliveryt
 An E-Commerce Platform for Home made Items (Django Backend).
 
 
