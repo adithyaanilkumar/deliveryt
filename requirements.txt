@@ -22,7 +22,7 @@ razorpay==1.2.0
 xhtml2pdf==0.2.4
 django3-easy-pdf==0.1.2.dev1
 WeasyPrint==51
-reportlab==3.5.42 
+reportlab==3.5.55 
 google-cloud-storage==1.28.1
 django-storages==1.9.1 
 psycopg2==2.8.5
