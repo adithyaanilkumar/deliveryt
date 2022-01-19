@@ -31,7 +31,7 @@ Please 🌟 and fork the repo!
 - Automated order receipt to email
 
 # What is Deliveryt?
-Deliveryt is a hyperlocal E- commerce platform for buying and selling Home made items. It allows for Home-makers, Artists, Pastry Chefs, Craftsman to desplay their products online and sell them.Since it is a hyper local delivery service, it is possible for Home chefs to deliver these items to the buyers.
+Deliveryt is a hyperlocal E- commerce platform for buying and selling Home made items. It allows for Home-makers, Artists, Pastry Chefs, Craftsman to display their products online and sell them.Since it is a hyper local delivery service, it is possible for Home chefs to deliver these items to the buyers.
 
 ## Getting started
 
