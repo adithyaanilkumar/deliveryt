@@ -1,0 +1,74 @@
+name: gardenfth
+description: A cross platform client for garden, a poultry ordering ecommerce service .
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.3
+  provider: ^4.1.2
+  firebase_auth: ^0.16.0
+  flutter_advanced_networkimage: ^0.7.0
+  google_sign_in: ^4.4.2
+  font_awesome_flutter: ^8.8.1
+  http: ^0.12.0+4
+  json_annotation: ^3.0.1
+  shared_preferences: ^0.5.7
+  algolia: ^0.1.6+1
+  neumorphic: ^0.3.0
+  flutter_spinkit: ^4.1.2+1
+  carousel_pro: ^1.0.0
+  dotted_border: ^1.0.5
+  flushbar: ^1.10.4
+  geolocator: ^5.3.1
+  flutter_image_compress: ^0.6.8
+  numeric_keyboard: ^1.0.0
+  intro_slider: ^2.3.1
+  path_provider: ^1.6.9
+  path: ^1.7.0
+  after_layout: ^1.0.7+2
+  flutter_cache_manager: ^1.2.2
+  cache_image: ^1.0.5
+  flutter_svg: ^0.17.4
+  badges: ^1.1.1
+  pull_to_refresh: ^1.5.8
+  razorpay_flutter: ^1.2.1
+  flutter_screenutil: ^1.1.0
+  flutter_secure_storage: ^3.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  build_runner: ^1.9.0
+  json_serializable: ^3.3.0
+
+
+flutter:
+  assets:
+    - assets/images/
+    - assets/login_icons/
+    - assets/login_images/
+
+  uses-material-design: true
+  fonts:
+  - family: SFPROBOLD
+    fonts:
+      - asset: assets/fonts/sfprobold.ttf
+  - family: SF-Pro
+    fonts:
+      - asset: assets/fonts/SF-Pro-Display-Medium.ttf
+      - asset: assets/fonts/SF-Pro-Display-Bold.ttf
+        weight: 700
+
+
+

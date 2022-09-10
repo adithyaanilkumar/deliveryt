@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "993136059848",
+    "firebase_url": "https://garden-fth.firebaseio.com",
+    "project_id": "garden-fth",
+    "storage_bucket": "garden-fth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993136059848:android:5c40ccdb43a8a6fb414cfd",
+        "android_client_info": {
+          "package_name": "co.developerx.gardenfth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993136059848-j6tsff9fvqv8556kcalsq66lcrvq85eh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.developerx.gardenfth",
+            "certificate_hash": "51578bcc0ec6de2e252fff27a14cd350cf31a9b3"
+          }
+        },
+        {
+          "client_id": "993136059848-s26l5gt3fhdqof7p9qk7nga0qs36mk83.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVAPUWfkbM42TSY4nWk6_GnfQgkl0Cezc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993136059848-s26l5gt3fhdqof7p9qk7nga0qs36mk83.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

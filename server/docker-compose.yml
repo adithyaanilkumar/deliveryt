@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  #db:
+  #image: postgres
+  web:
+    build: .
+    environment:
+      - DEBUG=1
+    env_file: .env
+    command: python manage.py makemigrations
+    command: python manage.py migrate
+    command: python manage.py shell -c "from django.contrib.auth.models import User; User.objects.create_superuser('garden', 'garden@example.com', 'garden')"
+    command: python manage.py crontab add
+    command: uvicorn garden_drf.asgi:application --host=0.0.0.0
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    #depends_on:
+    #- db
