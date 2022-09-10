@@ -1,4 +1,4 @@
-# HomeBrew (Previously deliverty)
+# HomeBrew (Previously Deliverty)
 A cross platform community driven marketplace to empower home makers and daily wage workers by providing them with E-commerce,Logistics and an additional source of income created using Django Rest Framework, React.js and Flutter.
 
 [![GitHub top language](https://img.shields.io/github/languages/top/adithyaanilkumar/deliveryt?color=yellow&logo=python)]() 
@@ -32,9 +32,9 @@ Please 🌟 and fork the repo!
 ## Getting started
 
 Follow the instructions below :
-1. [Django Rest Framework (Server)](http://localhost:3000)
-2. [React.js (Web App)](http://localhost:3000)
-3. [Flutter (Android App)](http://localhost:3000)
+1. [Django Rest Framework (Server)](https://github.com/adithyaanilkumar/deliveryt/tree/master/server#readme)
+2. [React.js (Web App)](https://github.com/adithyaanilkumar/deliveryt/tree/master/webapp#readme)
+3. [Flutter (Android App)](https://github.com/adithyaanilkumar/deliveryt/tree/master/app#readme)
 
 # What is HomeBrew?
 
