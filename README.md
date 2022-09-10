@@ -50,7 +50,8 @@ Good food is one of the essential items for people’s healthy daily living or o
 
 Upon joining as a member on the site, the users can enter their address and create their profile. It provides an easy-to-use interface for the registered users to browse various kitchens of homecooks and add home made food from these kitchens to their carts.This makes their lives easier as they can get delicious home made food delivered right to their doorstep.The users can track the live delivery details and also provide ratings to the home chefs food that they received.The delivery is undertaken by Auto-Rickshaw drivers through an app that is available to them.The Homechefs have access to an admin dashboard where they can upload details of the food that they are selling and can also see the order details and manage inventory.
 
-# Product Requirement Specification with Diagrams
+# HoomeBrew - Product Requirement Specification with Diagrams
+[HomeBrew - Project SRS.pdf](https://github.com/adithyaanilkumar/deliveryt/files/9540604/HomeBrew.-.Project.SRS.pdf)
 
 # To contribute
 Run the server and the app.
